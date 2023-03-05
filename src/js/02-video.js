@@ -36,3 +36,4 @@ if (localStorage.getItem('videoplayer-current-time')) {
 }
 
 player.on('timeupdate', throttle(onPlayer, 1000));
+console.log(player)
