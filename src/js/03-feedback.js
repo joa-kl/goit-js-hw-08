@@ -35,8 +35,8 @@ function updateForm() {
         return;
     }
     const savedForm = JSON.parse(localStorage.getItem(storageKey));
-        Object.entries(savedForm).forEach(([name, value]) => {
-            data[name] = value;
-            feedbackForm.elements[name].value = value;
-        })
+    Object.entries(savedForm).forEach(([name, value]) => {
+        data[name] = value;
+        feedbackForm.elements[name].value = value;
+    });
 }
